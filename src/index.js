@@ -17,7 +17,9 @@ class App extends Component {
   render() {
     return (
       <div style={styles}>
-        <button onClick={this.toggleState}>toggle</button>
+        <button className="btn btn-primary m-5" onClick={this.toggleState}>
+          toggle
+        </button>
         {this.state.showPerson === true ? <Person /> : null}
       </div>
     );
